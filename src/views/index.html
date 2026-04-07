@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/public/css/styles.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>  Erro</h2>
+            <p id="errorMessage"></p>
+            <button id="closeBtn">Fechar</button>
+        </div>
+    </div>
+
+    <div class="frame-meio">
+        <label id="titulo">LOGIN</label>
+        <label for="entry_email" style="display: none;">Email</label>
+        <input type="text" id="entry_email" placeholder="INSIRA SEU EMAIL">
+        <label for="entry_senha" style="display: none;">Senha</label>
+        <input type="text" id="entry_senha" placeholder="INSIRA SUA SENHA">
+        <button id="botao_entrar">ENTRAR</button>
+        <button id="botao_registrar" onclick="AbrirRegister()">REGISTRAR-SE</button>
+        <script>
+            function AbrirRegister(){
+                window.location.href = "register.html";
+            }
+        </script>
+        <button id="esqueci" onclick="AbrirEsqueci()">ESQUECI MINHA SENHA</button>
+        <script>
+            function AbrirEsqueci(){
+                window.location.href = "esqueci.html"
+            };
+        </script>
+    </div>
+    <script src="/src/public/js/script.js"></script>
+</body>
+</html>

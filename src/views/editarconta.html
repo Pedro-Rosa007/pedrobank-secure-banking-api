@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/public/css/styleseditar.css">
+    <title>Edite seus Dados</title>
+</head>
+<body>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>✅ Sucesso</h2>
+            <p id="successMessage"></p>
+            <button id="closeSuccessBtn">Fechar</button>
+        </div>
+    </div>
+
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>❌ Erro</h2>
+            <p id="errorMessage"></p>
+            <button id="closeErrorBtn">Fechar</button>
+        </div>
+    </div>
+
+    <div class="frame-reg">
+        <h1 id="topotit">EDITAR CONTA</h1>
+        
+        <div class="form-group">
+            <label for="input-nome">NOME COMPLETO</label>
+            <input type="text" id="input-nome" placeholder="Digite seu nome completo">
+        </div>
+
+        <div class="form-group">
+            <label for="input-username">USERNAME</label>
+            <input type="text" id="input-username" placeholder="Escolha um nome de usuário">
+        </div>
+
+        <div class="form-group">
+            <label for="input-email">EMAIL</label>
+            <input type="email" id="input-email" placeholder="Digite seu email">
+        </div>
+
+        <div class="form-group">
+            <label for="input-cpf">CPF</label>
+            <input type="text" id="input-cpf" placeholder="Digite seu CPF (apenas números)">
+        </div>
+
+        <div class="form-group">
+            <label for="input-senha">NOVA SENHA</label>
+            <input type="password" id="input-senha" placeholder="Digite uma nova senha forte">
+        </div>
+
+        
+
+        <div class="button-group">
+            <button id="botao-registrar" class="btn-primary" onclick="AlteracaoDados()">ALTERAR</button>
+            <button id="botao-voltar" class="btn-secondary" onclick="window.location.href='mainprincipal.html'">VOLTAR</button>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <script src="/src/public/js/scriptseditar.js"></script>
+</body>
+</html>

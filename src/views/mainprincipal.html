@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/public/css/stylesmain.css">
+    <title>Menu Principal</title>
+</head>
+<body>
+    <div class="nav">
+        <h1 id="site">DataCenter</h1>
+        <button id="back" onclick="TelaLogin()">VOLTAR</button>
+    <script>
+        function TelaLogin(){
+            window.location.href = "index.html";
+        }
+    </script>
+        <button id="alterar_info" onclick="AbrirEditar()">👤 EDITAR CONTA</button>
+        <script>
+            function AbrirEditar(){
+                window.location.href = "editarconta.html"
+            }
+        </script>
+    </div>
+
+
+
+    <div class="container01">
+        <h1 id="nome_usuario">USERNAME</h1>
+        <h2 id="usuario">#######</h2>  
+    </div>
+
+
+
+    <div class="container02">
+        <h1 id="cpf_usuario">CPF</h1>
+        <h2 id="cpf">#######</h2>  
+    </div>
+
+
+    <div class="container03">
+        <h1 id="email_usuario">EMAIL</h1>
+        <h2 id="email">#######</h2>  
+    </div>
+
+
+    <div class="container04">
+        <h1 id="nome_usuario">NOME</h1>
+        <h2 id="nome">#######</h2>  
+    </div>
+
+
+
+    <div class="containerdireita">
+        <div id="frame-saldo">
+            <h1 id="label-saldo">SALDO DA CONTA</h1>
+            <label for="saldo_da_conta" style="display: none;">Saldo da Conta</label>
+            <input type="text" value="saldo da conta" readonly id="saldo_da_conta">
+            
+        </div>
+        <div id="frame-operacao">
+            <label id="label-saque">SAQUE</label>
+            <input type="number" step="0.01" min="0" placeholder="0.00" id="valor-saque">
+            <button id="sacar" onclick="Operations()">MOVIMENTAR</button>
+            <label id="label-deposito">DEPOSITO</label>
+            <input type="number" step="0.01" min="0" placeholder="0.00" id="valor-deposito">
+            <button id="depositar" onclick="Operations()">MOVIMENTAR</button>
+        </div>
+    </div>
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+    
+    
+
+    <script src="/src/public/js/scriptsmain.js"></script>
+</body>
+</html>

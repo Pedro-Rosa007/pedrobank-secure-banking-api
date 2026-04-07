@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/public/css/stylesesqueci.css">
+    <title>Esqueci minha senha</title>
+</head>
+<body>
+    <div class="frame-meio">
+        <label id="titulo">ALTERAÇÃO DE SENHA</label>
+        <label id="label-email">INSIRA SEU EMAIL</label>
+        <input type="text" placeholder="EMAIL CADASTRADO" id="entry-email">
+        <button id="send-code" onclick="ValidarEmail()">ENVIAR CÓDIGO</button>
+        <label id="label-codigo">INSIRA O CÓDIGO</label>
+        <input type="text" placeholder="CÓDIGO" id="entry-codigo">
+        <button id="verify-code" onclick="ValidarCodigo()">VERIFICAR CÓDIGO</button>
+        <button id="voltar" onclick="Voltar()">VOLTAR</button>
+        <script>
+            function Voltar(){
+                window.location.href = "index.html"
+            }
+        </script>
+    </div>
+
+
+
+
+
+
+    <script src="/src/public/js/scriptsesqueci.js"></script>
+</body>
+</html>
